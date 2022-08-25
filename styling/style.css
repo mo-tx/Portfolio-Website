@@ -1,0 +1,21 @@
+body {
+    background-color: hsla(179, 65%, 68%, 0.2);
+    margin: 0 auto;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+
+.navigation li{
+    display: inline-block;
+}
+
+.navigation ul {
+
+    text-align: left;
+}
