@@ -1,6 +1,23 @@
 body {
     background-color: hsla(179, 65%, 68%, 0.2);
     margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-family: Niramit, Helvetica, sans-serif;
+}
+
+h2 {
+    font-family: Niramit, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "nav nav
+                          head head
+                          footer footer";
 }
 
 .navbar {
