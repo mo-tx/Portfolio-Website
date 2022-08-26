@@ -31,6 +31,7 @@ h2 {
     grid-template-areas: "nav nav"
                          "main main"
                          "footer footer";
+    row-gap: 3rem;
 }
 
 .navbar {
@@ -62,7 +63,6 @@ main {
     display: grid;
     grid-template-areas: "bio picture"
                          "skills skills";
-    grid-template-columns: 2fr 1fr;
 }
 
 .bio {
@@ -113,18 +113,22 @@ footer {
 
 /* main styling */
 main {
-    justify-items: center;
-    justify-content: center;
+    padding: 0 3rem 0 3rem;
 }
 
-.bio {
-    padding: 1rem;
-    max-width: 15rem;
-    text-align: end;
+.bio h1 {
+    padding: 0.75rem 0 0.75rem 0;
+}
+
+.bio p {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    background-color: hsl(0, 0%, 100%);
+    max-width: 30rem;
+    border-radius: 0.5rem;
 }
 
 .profile-picture-container {
-    padding: 1rem;
+    padding: 3.5rem;
 }
 
 .profile-picture-container img {
