@@ -4,10 +4,6 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-i {
-    padding: 0 0.5rem 0 0.5rem 0;
-}
-
 /* typography */
 h1 {
     font-family: Niramit, Arial, sans-serif;
@@ -64,7 +60,7 @@ h3 {
 
 .navbar .download-cv {
     grid-area: cv;
-    justify-self: end;
+    justify-self: center;
 }
 
 main {
@@ -113,7 +109,7 @@ footer {
 }
 
 .navbar .download-cv {
-    padding: 1rem;
+
 }
 
 .current-page a{
@@ -152,15 +148,29 @@ main {
     padding: 0.75rem 0 0.75rem 0;
 }
 
-.technical-skills ul {
+.technical-skills div {
     padding: 1rem 1.5rem 1rem 1.5rem;
     background-color: hsl(0, 0%, 100%);
     max-width: 35rem;
     border-radius: 0.5rem;
+    margin: 1rem 0 1rem 0;
+    display: grid;
 }
 
 .technical-skills h2 {
     font-weight: 500;
+    background-color: hsl(33, 100%, 88%);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.technical-skills i {
+    padding: 0.75rem;
+}
+
+.technical-skills .button {
+    padding: 0.5rem;
+    justify-self: end;
 }
 
 /* footer styling */
