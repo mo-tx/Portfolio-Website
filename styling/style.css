@@ -7,11 +7,13 @@ body {
 /* typography */
 h1 {
     font-family: Niramit, Arial, sans-serif;
+    font-size: xx-large;
 }
 
 h2 {
     font-family: Niramit, Arial, sans-serif;
     font-weight: bold;
+    font-size: x-large;
 }
 
 .navbar {
@@ -60,6 +62,19 @@ main {
     display: grid;
     grid-template-areas: "bio picture"
                          "skills skills";
+    grid-template-columns: 2fr 1fr;
+}
+
+.bio {
+    grid-area: bio;
+}
+
+.profile-picture-container {
+    grid-area: picture;
+}
+
+.technical-skills {
+    grid-area: skills;
 }
 
 footer {
@@ -92,9 +107,32 @@ footer {
     padding: 1rem;
 }
 
+.current-page a{
+    color: hsla(179, 65%, 49%, 0.785);
+}
+
 /* main styling */
 main {
+    justify-items: center;
+    justify-content: center;
+}
 
+.bio {
+    padding: 1rem;
+    max-width: 15rem;
+    text-align: end;
+}
+
+.profile-picture-container {
+    padding: 1rem;
+}
+
+.profile-picture-container img {
+    max-height: 20rem;
+}
+
+.technical-skills {
+    background-color: hsl(0, 0%, 100%);
 }
 
 /* footer styling */
