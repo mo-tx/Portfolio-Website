@@ -1,7 +1,11 @@
 body {
-    background-color: hsla(179, 65%, 68%, 0.2);
+    background-color: hsla(179, 60%, 75%, 0.2);
     margin: 0 auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+i {
+    padding: 0 0.5rem 0 0.5rem 0;
 }
 
 /* typography */
@@ -16,8 +20,13 @@ h2 {
     font-size: x-large;
 }
 
+h3 {
+    font: Niramit, Arial, sans-serif;
+    font-size: larger;
+}
+
 .navbar {
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .navbar .logo {
@@ -123,7 +132,7 @@ main {
 .bio p {
     padding: 1rem 1.5rem 1rem 1.5rem;
     background-color: hsl(0, 0%, 100%);
-    max-width: 30rem;
+    max-width: 35rem;
     border-radius: 0.5rem;
 }
 
@@ -133,10 +142,25 @@ main {
 
 .profile-picture-container img {
     max-height: 20rem;
+    border-radius: 0.5rem;
 }
 
 .technical-skills {
+}
+
+.technical-skills h1 {
+    padding: 0.75rem 0 0.75rem 0;
+}
+
+.technical-skills ul {
+    padding: 1rem 1.5rem 1rem 1.5rem;
     background-color: hsl(0, 0%, 100%);
+    max-width: 35rem;
+    border-radius: 0.5rem;
+}
+
+.technical-skills h2 {
+    font-weight: 500;
 }
 
 /* footer styling */
