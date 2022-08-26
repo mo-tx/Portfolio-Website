@@ -4,6 +4,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
 /* typography */
 h1 {
     font-family: Niramit, Arial, sans-serif;
@@ -29,6 +30,7 @@ h3 {
     font-family: Pattaya;
     font-size: larger;
 }
+
 
 /* css grid layout */
 .container {
@@ -63,11 +65,18 @@ h3 {
     justify-self: center;
 }
 
-main {
+.home {
     grid-area: main;
     display: grid;
     grid-template-areas: "bio picture"
                          "skills skills";
+}
+
+.projects {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "web"
+                         "android";
 }
 
 .bio {
@@ -173,10 +182,22 @@ main {
     justify-self: end;
 }
 
+
 /* footer styling */
 footer {
     height: 5rem;
-    background-color: hsla(179, 33%, 25%, 0.2);
+    border-top: 1px solid hsla(179, 33%, 25%, 0.2);
+    padding: 1rem;
+    display: grid;
+    justify-items: center;
+}
+
+footer li {
+    display: inline-block;
+}
+
+footer i {
+    padding: 0.5;
 }
 
 /* navbar animations */
