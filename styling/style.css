@@ -19,7 +19,7 @@ h2 {
 
 h3 {
     font: Niramit, Arial, sans-serif;
-    font-size: larger;
+    font-size: medium;
 }
 
 .navbar {
@@ -38,7 +38,7 @@ h3 {
     grid-template-areas: "nav nav"
                          "main main"
                          "footer footer";
-    row-gap: 3rem;
+    row-gap: 2rem;
 }
 
 .navbar {
@@ -65,6 +65,7 @@ h3 {
     justify-self: center;
 }
 
+/* css-grid of index.html main */
 .home {
     grid-area: main;
     display: grid;
@@ -72,6 +73,19 @@ h3 {
                          "skills skills";
 }
 
+.bio {
+    grid-area: bio;
+}
+
+.profile-picture-container {
+    grid-area: picture;
+}
+
+.technical-skills {
+    grid-area: skills;
+}
+
+/* css-grid of projects.html main */
 .projects {
     grid-area: main;
     display: grid;
@@ -87,16 +101,36 @@ h3 {
     grid-area: web;
 }
 
-.bio {
-    grid-area: bio;
+/* grid of projects.html main */
+.education {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "education"
+                         "achievements"
+                         "certificates";
 }
 
-.profile-picture-container {
-    grid-area: picture;
+.education .formal-education {
+    grid-area: education;
 }
 
-.technical-skills {
-    grid-area: skills;
+.education .achievements-activities-failures {
+    grid-area: achievements;
+}
+
+.education .certificates {
+    grid-area: certificates;
+}
+
+/* grid of contact.html main */
+.contact {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "contact";
+}
+
+.contact .ways-of-contact {
+    grid-area: contact;
 }
 
 footer {
@@ -106,8 +140,6 @@ footer {
 
 /* navbar styling */
 .navbar {
-    top: 0;
-    width: 100%;
     background-color: hsl(0, 0%, 100%);
     border-bottom: 1px solid hsla(179, 33%, 25%, 0.2);
 }
@@ -131,10 +163,10 @@ footer {
 
 /* main styling */
 main {
-    padding: 0 3rem 0 3rem;
+    padding: 0rem 3rem 0rem 3rem;
 }
 
-/* styling of index.html */
+/* styling of index.html main */
 .bio h1 {
     padding: 0.75rem 0 0.75rem 0;
 }
@@ -186,7 +218,7 @@ main {
     justify-self: end;
 }
 
-/* styiling of projects.html */
+/* styiling of projects.html main */
 .android-dev-projects h1{
     padding: 0.75rem 0 0.75rem 0;
 }
@@ -201,6 +233,7 @@ main {
     border-radius: 0.5rem;
     margin: 1rem 0 1rem 0;
     display: grid;
+    width: 50%;
 }
 
 .image-processing-project h2 {
@@ -215,6 +248,7 @@ main {
     border-radius: 0.5rem;
     margin: 1rem 0 1rem 0;
     display: grid;
+    width: 50%;
 }
 
 .solar-panel-project h2 {
@@ -229,6 +263,7 @@ main {
     border-radius: 0.5rem;
     margin: 1rem 0 1rem 0;
     display: grid;
+    width: 50%;
 }
 
 .portfolio-website-project h2 {
@@ -270,9 +305,103 @@ main {
     border-radius: 0.5rem;
 }
 
+/* styling of education.html main*/
+.formal-education {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.5rem;
+    margin: 1rem 0 1rem 0;
+    display: grid;
+    width: 75%;
+}
+
+.formal-education h2 {
+    font-weight: 500;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.formal-education h4 {
+    font-weight: 500;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+}
+
+#highschool h2 {
+    display: inline-block;
+}
+
+#highschool #nsc {
+    padding: 0rem 0em 0rem 0.5rem;
+}
+
+#highschool #school {
+    padding: 0rem 0rem 0rem 0rem;
+}
+
+.formal-education #nsc {
+    font-style: italic;
+    color: hsl(32, 100%, 77%);
+}
+
+.achievements-activities-failures {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.5rem;
+    margin: 1rem 0 1rem 0;
+    display: grid;
+    width: 75%;
+}
+
+.achievements-activities-failures h2 {
+    font-weight: 500;
+    padding: 0.5rem;
+}
+
+.achievements-activities-failures h3 {
+    font-weight: 100;
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+.certificates {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.5rem;
+    margin: 1rem 0 1rem 0;
+    display: grid;
+    width: 75%;
+}
+
+.certificates h2 {
+    font-weight: 500;
+    padding: 0.5rem;
+}
+
+.certificates h3 {
+    font-weight: 500;
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+/* styling of contacts.html main*/
+.contact {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.contact .ways-of-contact h2 {
+    font-weight: 500;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.ways-of-contact i {
+    padding: 0.5rem 0.25rem 0.5rem 0.25rem;
+}
+
 /* footer styling */
 footer {
-    height: 7rem;
+    height: 5rem;
     border-top: 1px solid hsla(179, 33%, 25%, 0.2);
     padding: 1rem;
     display: grid;
@@ -280,6 +409,9 @@ footer {
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+
+footer .footer {
 }
 
 footer li {
