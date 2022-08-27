@@ -195,6 +195,10 @@ main {
     padding: 0.75rem 0 0.75rem 0;
 }
 
+.android-dev-projects .block, .web-dev-projects .block {
+    background-color: hsl(33, 100%, 88%);
+}
+
 /* footer styling */
 footer {
     height: 7rem;
@@ -223,4 +227,3 @@ a {
 a:hover {
     color: hsl(33, 100%, 88%);
 }
-
