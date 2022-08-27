@@ -75,8 +75,16 @@ h3 {
 .projects {
     grid-area: main;
     display: grid;
-    grid-template-areas: "web"
-                         "android";
+    grid-template-areas: "android"
+                         "web";
+}
+
+.projects .android-dev-projects {
+    grid-area: android;
+}
+
+.projects .web-dev-projects {
+    grid-area: web;
 }
 
 .bio {
@@ -158,7 +166,7 @@ main {
     padding: 0.75rem 0 0.75rem 0;
 }
 
-.technical-skills div {
+.technical-skills div, .block {
     padding: 1rem 1.5rem 1rem 1.5rem;
     background-color: hsl(0, 0%, 100%);
     max-width: 35rem;
@@ -183,6 +191,9 @@ main {
     justify-self: end;
 }
 
+.android-dev-projects, .web-dev-projects h1{
+    padding: 0.75rem 0 0.75rem 0;
+}
 
 /* footer styling */
 footer {
@@ -204,4 +215,12 @@ footer i {
     padding: 0.75rem;
 }
 
-/* navbar animations */
+/* animations and transitions */
+a {
+    transition: all 200ms ease;
+}
+
+a:hover {
+    color: hsl(33, 100%, 88%);
+}
+
